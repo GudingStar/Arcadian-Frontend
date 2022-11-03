@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.profileTopNav{
+  width: 100%;
+  overflow-x: auto !important;
+}
+
+.profile-top-navItem{
+  color:#9659FB !important;
+  border-bottom: 2px solid #9659FB;
+}
+
+.profileTop-bg {
+  background-image: url('./images/profileBackground.svg');
+  width: 80vw;
+  background-repeat: no-repeat;
+}
+
+#step2{
+  display: none;
+}
+
+#step3Button{
+  display:none;
+}
+
+.viewExplorerButton{
+  color:#9659FB !important;
+  border: 1px solid #9659FB;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+
+.transactionDiv{
+  height: 500px !important;
+  overflow-y: auto;
+}
+
+.accountSettingsNav{
+  width: 100% !important;
+  overflow-x: auto !important;
+}
+
+.completedButton{
+  border-color: rgba(52, 211, 153, var(--tw-border-opacity));
+}
+
+.connectWalletDropdownContent{
+  position:absolute;
+  top:60px;
+  right: 8px;
+  width: 129.7px;
+  display: none;
+}
+
+.connectWallet{
+  display: flex;
+  justify-content: center;
+  width: 129.7px;
+}
+
+.contactSelectDiv{
+  width: 196.2px;
+}
+
+.card_scale{
+  transition:0.5s
+}
+
+.card_scale:hover{
+  transform: scale(1.2);
+  z-index:2000
+}
+
+.mint_scale{
+  transition:0.5s
+}
+
+.mint_scale:hover{
+  transform: scale(1.5);
+  box-shadow: 2px 2px 20px #9659FB;
+  round: 20px;
+}
+
+.mint_button:active {
+ box-shadow: 2px 2px 100px #9659FB; 
+}
+
+@media (max-width: 640px){
+  .transactionTd{
+    text-align: center;
+  }
+}
+
+@media (min-width: 535px) and (max-width: 640px) {
+  .gameSection{
+    width: 400px !important;
+  }
+}
+
+@media (min-width: 1900px) {
+  .navbar {
+    margin-right: 500px;
+  }
+}
+
+@media (max-width: 1018px){
+  .portalbalance{
+    display: block!important;
+  }
+}
+
+@media (min-width: 1500px) and (max-width: 1900px) {
+  .navbar {
+    margin-right: 300px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .navbar {
+    margin-right: 200px;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    display: none !important;
+  }
+}
+
+@media (max-width: 474px) {
+  .portalNav{
+    width: 50% !important;
+    overflow-x: auto !important;
+  }
+}
+
+@media (max-width: 440px) {
+  .navLists {
+    overflow-x: auto!important;
+    width: 70% !important;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .userEditText {
+    display: none!important;
+  }
+}
+
+@media (max-width: 300px) {
+  .userEditText {
+    display: none !important;
+  }
+
+}
+
+@media (max-width: 260px) {
+  .navLists {
+    width: 12.5rem!important;
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 350px){
+  .transactionSelect{
+    display: block;
+  }
+}
