@@ -1,18 +1,21 @@
 import Card from "react-animated-3d-card";
+import "@fontsource/space-grotesk";
+import "@fontsource/poppins";
 
 const MintCard = () => {
 	return (
-			<Card
+			 <Card
 				cursorPointer={false}
-	        	shineStrength={0.2}
-			>
-				<div className="relative h-96 rounded-md py-2 px-2 card_scale bg-black-dark w-full">
+	       	shineStrength={0.1}
+			 >
+			 <div>
+				<div className="h-96 py-2 px-2 bg-card-back w-full">
 					<div className="flex justify-between mt-2">
 						<span className="bg-black py-1 px-3 text-white border-1 border-white rounded-md">Lvl 1</span>
 						<span className="top-2 right-2 bg-gray-700 rounded-md text-white px-2 py-1">LTD Edition</span>
 					</div>
-					<h1 className="text-center text-gray-400 text-xl mt-4">Upgradeable<span className="text-red-700">+3</span></h1>
-					<div className="mt-20">
+					<h1 className="text-center text-gray-400 text-xl mt-4">Upgradeable<span className="text-red-500 font-bold ml-2">+3</span></h1>
+					<div className="mt-16">
 						<div className="shadow-nft h-2"></div>
 						<img src="/assets/images/market/Cue.svg" className="-mt-8"/>
 					</div>
@@ -23,9 +26,9 @@ const MintCard = () => {
 						<span className="font-bold text-white mx-2 text-center flex justify-center">:</span>
 						<span className="text-sm p-2 rounded-full bg-gradient-to-b from-purple-700 to-gray-300 text-white font-bold border-1 border-white">08</span>
 					</div>
-					<div className="flex justify-between mt-2">
+					<div className="flex justify-between mt-4">
 						<div>
-							<h1 className="text-white font-Space-Grotesk text-2xl">Findora Cue</h1>
+							<h1 className="text-white font-Space-Grotesk text-2xl">Cyber Cue</h1>
 							<h1 className="text-gray-300 font-poppins text-sm">Mando</h1>
 						</div>
 						<img src="/assets/images/navbar/user.svg" className="w-9" />
@@ -43,7 +46,8 @@ const MintCard = () => {
 						</div>
 					</div>
 				</div>
-			</Card>
+				</div>
+			 </Card>
 	)
 }
 

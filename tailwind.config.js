@@ -16,11 +16,18 @@ module.exports = {
         'back-grey': '#1E1E1E',
         'game-grey': '#D8D8D8',
         'pure-ping': '#B004F6',
+        'nft-shadow': 'rgb(0,0,255,0.05);',
+        background: '#1C1E2A',
+        'card-back': '#141621',
+        'filter-back': "#2E3140",
+        'pure-pink': 'rgba(177, 34, 227, 0.2)',
+        purple : '#6400FF',
+        'pink': '#FF03F5'
       },
       fontFamily: {
-        orbitron : 'orbitron',
-        'Space-Grotesk' : 'Space Grotesk',
-        poppins: 'Poppins'
+        orbitron : 'orbitron !important',
+        'Space-Grotesk' : 'Space Grotesk !important',
+        poppins: 'Poppins !important'
       },
       width:{
         contentWidth : '1100px',
@@ -44,7 +51,14 @@ module.exports = {
       },
       boxShadow: {
         'nft' : '2px 2px 100px rgb(0,0,255); '
-      }
+      },
+      skew: {
+        'minus-45': '-45deg',
+      },
+      gradientColorStops: theme => ({
+       ...theme('colors'),
+       'pink': '#BE08C1',
+      })
     },
   },
   variants: {

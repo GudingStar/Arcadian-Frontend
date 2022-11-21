@@ -69,7 +69,7 @@ const Navbar = ({ navbarSelect,menuSelect }) => {
       setCurrentChainId(chainId);
       if (Number(chainId) !== 1666600000 && Number(chainId) !== 43114) {
         NotificationManager.error("Incorrect chainID", "", 2000);
-      }
+      } 
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       const accounts = await provider.listAccounts();
       if (
@@ -424,7 +424,7 @@ const Navbar = ({ navbarSelect,menuSelect }) => {
                         "block";
                     }
                   }}
-                  className="connectWallet text-light-blue border-primary-pink border-solid border-2 rounded-xl py-1 px-3 xl:min-w-[10rem] lg:min-w-[10rem] md:min-w-[9rem] sm:min-w-[8rem] text-sm"
+                  className="connectWallet text-light-blue border-primary-pink border-solid border-2 rounded-xl py-1 px-3 xl:min-w-[12rem] lg:min-w-[12rem] md:min-w-[10rem] sm:min-w-[9rem] text-sm"
                 >
                   {state.walletStatus === "connected" && wallet.status === "connected" &&
                     networkState === "harmony" && (

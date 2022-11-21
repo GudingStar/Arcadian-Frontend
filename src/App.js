@@ -15,8 +15,13 @@ import Crypto8Ball from "./pages/games/crypto8ball";
 import Arcade from "./pages/arcade";
 import Affiliates from "./pages/affiliates";
 import Market from "./pages/marketPlace/market";
+import Product from './pages/marketPlace/product'
+import Collection from "./pages/marketPlace/collection";
+import Mint from './pages/mint/mint'
+import './App.css'
 
 import { PushSpinner } from "react-spinners-kit";
+
 
 const App = () => {
   const [navbarSelect, setNavbarSelect] = useState("");
@@ -39,7 +44,7 @@ const App = () => {
           <PushSpinner size={30} color="#686769" loading={loading} />
         </div>
       ) : (
-        <div className="bg-dark min-h-100vh">
+        <div className="bg-background min-h-100vh">
           <Navbar navbarSelect={navbarSelect} menuSelect={menuSelect} />
           <div className=" xl:flex lg:flex md:flex block xl:px-0 lg:px-0 md:px-0 px-2  min-h-screen">
             <Menu menuSelect={menuSelect} />
@@ -145,6 +150,33 @@ const App = () => {
                 path="/market"
                 element={
                   <Market
+                    setNavbarSelect={setNavbarSelect}
+                    setMenuSelect={setMenuSelect}
+                  />
+                }
+              />
+              <Route 
+                path="/product"
+                element={
+                  <Product 
+                    setNavbarSelect={setNavbarSelect}
+                    setMenuSelect={setMenuSelect}
+                  />
+                }
+              />
+              <Route
+                path="Collection"
+                element={
+                  <Collection
+                    setNavbarSelect={setNavbarSelect}
+                    setMenuSelect={setMenuSelect}
+                  />
+                }
+              />
+              <Route
+                path="Mint"
+                element={
+                  <Mint
                     setNavbarSelect={setNavbarSelect}
                     setMenuSelect={setMenuSelect}
                   />

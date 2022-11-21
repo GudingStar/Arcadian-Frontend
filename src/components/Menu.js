@@ -21,7 +21,7 @@ const Menu = ({ menuSelect }) => {
       <div className="mt-3">
         <Link to="/market" className="no-underline">
           <img
-            src="/assets/images/menu/Market.svg"
+            src={menuSelect === "market" ? "/assets/images/menu/MarketBright.svg" : "/assets/images/menu/Market.svg"}
             className="m-auto"
             alt="Market"
           ></img>
